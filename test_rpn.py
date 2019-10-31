@@ -11,3 +11,7 @@ class TestBasics(unittest.TestCase):
     def test_bad_input(self):
         with self.assertRaises(TypeError):
             rpn.calculate('1 2 3 +')
+    def test_exponentiation(self):
+        result = rpn.calculate('5 ^ 3')
+        self.assertEqual(125, result)
+
