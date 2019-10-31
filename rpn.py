@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-OPS = {'+', '-', '/', '*'}
+OPS = {'+', '-', '/', '*', '^'}
 
 def do_operation(op, num1, num2):
     if op == '+':
@@ -9,7 +9,11 @@ def do_operation(op, num1, num2):
         return num2 - num1
     if op == '*':
         return num1 * num2
-    return num2 / num1
+    if op == '^':
+        return num2 ** num1
+    if op == '/':
+        return num2 / num1
+    raise TypeError('Unrecognized operator')
 
 
 def calculate(arg):
