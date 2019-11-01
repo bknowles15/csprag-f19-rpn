@@ -5,7 +5,7 @@ import operator
 OPS = {
     '+': operator.add, 
     '-': operator.sub,
-    '/': operator.truediv, 
+    '/': operator.floordiv, 
     '*': operator.mul, 
     '^': operator.pow
 }
