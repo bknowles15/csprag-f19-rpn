@@ -21,9 +21,9 @@ def exp(a, b):
 OPS = {
     '+': operator.add, 
     '-': operator.sub,
-    '/': div, 
-    '*': mult, 
-    '^': exp
+    '/': operator.truediv, 
+    '*': operator.mul, 
+    '^': operator.pow
 }
 
 def calculate(arg):
@@ -47,7 +47,8 @@ def calculate(arg):
 
 def main():
     while True:
-        calculate(input("rpn calc>"))
+        result = calculate(input("rpn calc>"))
+        print(result)
 
 if __name__ == '__main__':
     main()
