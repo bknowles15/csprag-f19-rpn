@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# TEST COMMENT FOR TRAVIS
 
 import operator
 
